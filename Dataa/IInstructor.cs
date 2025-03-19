@@ -11,10 +11,8 @@ namespace WebApplication1.Dataa
     {
         IEnumerable<Instructor> GetInstructors();
         Instructor GetInstructorById(int instructorId);
-
         Instructor AddInstructor(Instructor instructor);
         Instructor updateInstructor(Instructor instructor);
-        
         void DeleteInstructor(int instructorId);
     }
 }

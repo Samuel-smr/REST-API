@@ -7,8 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-builder.Services.AddSingleton<ICategory, CategoryDal>();
-builder.Services.AddSingleton<IInstructor, InstructorDal>();
+//builder.Services.AddSingleton<ICategory, CategoryDal>();
+builder.Services.AddSingleton<IInstructor, InstructorADO>();
+
 
 var app = builder.Build();
 
